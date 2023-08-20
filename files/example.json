@@ -1,5 +1,4 @@
-[
-  {
+[{
     "carModel": "Audi",
     "price": 0,
     "colors": [{ "color": "blue" }, { "color": "green" }]
@@ -15,4 +14,5 @@
     "price": 20000,
     "colors": [{ "color": "yellow" }, { "color": "green" }]
   }
+
 ]

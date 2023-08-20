@@ -9,6 +9,11 @@ async function run() {
   const transformer = new ETLTransformer({
     inputFile: "files/example.csv",
     outputFile: "files/example-json-result.csv",
+    fields: [
+      { parent: "carModel"},
+      { parent: "manual"},
+      { parent: "colors", child: ["color","style"] , nested: true }
+    ],
   });
 
   transformer

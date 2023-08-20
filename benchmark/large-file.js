@@ -18,7 +18,7 @@ async function run() {
     .addStage("jsonToCsv")
     .addStage("output");
 
-  await transformer.parseFile().catch(console.error);
+  await transformer.parseFile().catch(err => console.log(err.message));
 
   const end = performance.now();
   console.log("File parsing completed...");
